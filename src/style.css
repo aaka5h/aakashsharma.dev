@@ -315,6 +315,7 @@ a:focus {
   margin-bottom: var(--spacing-0);
   min-width: 50px;
   border-radius: 100%;
+  flex: 0 0 auto;
   width: 4rem;
   height: 4rem;
 }
