@@ -3,7 +3,7 @@ module.exports = {
     title: `Aakash's Blog`,
     author: {
       name: `Aakash Sharma`,
-      summary: `dev thriving to be better`,
+      summary: ``,
     },
     description: `Hello there Welcome to my corner of the internet`,
     siteUrl: `https://aakashsharma.dev/`,
@@ -79,8 +79,8 @@ module.exports = {
                 return Object.assign({}, node.frontmatter, {
                   description: node.excerpt,
                   date: node.frontmatter.date,
-                  url: site.siteMetadata.siteUrl + node.fields.slug,
-                  guid: site.siteMetadata.siteUrl + node.fields.slug,
+                  url: site.siteMetadata.siteUrl + "/blog" + node.fields.slug,
+                  guid: site.siteMetadata.siteUrl + "/blog" + node.fields.slug,
                   custom_elements: [{ "content:encoded": node.html }],
                 })
               })
@@ -104,6 +104,7 @@ module.exports = {
                 }
               }
             `,
+            title: `Aakash's RSS feed`,
             output: "/rss.xml",
           },
         ],

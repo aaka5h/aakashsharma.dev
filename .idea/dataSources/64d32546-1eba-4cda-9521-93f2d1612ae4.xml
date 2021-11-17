@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="MongoDB - @localhost">
+  <database-model serializer="dbm" dbms="UNKNOWN" family-id="UNKNOWN" format-version="4.23">
+    <root id="1"/>
+    <database id="2" parent="1" name="Mongo">
+      <Current>1</Current>
+    </database>
+  </database-model>
+</dataSource>
